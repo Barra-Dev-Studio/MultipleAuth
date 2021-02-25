@@ -1,0 +1,26 @@
+{
+    "name": "barradev/multipleauth",
+    "description": "Modul multiple auth untuk modul Barra Dev Studio",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khoerul Umam",
+            "email": "id.khoerulumam@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BarraDev\\MultipleAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BarraDev\\MultipleAuth\\MultipleAuthServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "require": {}
+}
