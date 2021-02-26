@@ -77,4 +77,14 @@ class MultipleAuthPublishCommand extends Command
     {
         $this->publishDirectory(__DIR__ . '/app/Http/Middleware/', app()->path() . "/Http/Middleware/");
     }
+
+    /**
+     * Publish migration.
+     *
+     * @return void
+     */
+    protected function publishMigrations()
+    {
+        $this->publishDirectory(__DIR__ . '/database/migration/', app()->databasePath() . "/Migrations/");
+    }
 }
